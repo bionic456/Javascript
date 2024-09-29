@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cars</h1>
+    <p id="cars"></p>
+
+    <script>
+        var cars=['Honda','Toyota','Porsche','Lamborghini']
+
+        document.getElementById("cars").innerHTML=cars[2]+ " " + cars[3]
+            
+            document.write(cars)
+            document.write("<br>")
+
+            cars.pop()
+              document.write("<br>")
+            document.write(cars)
+            document.write("<br>")
+
+                            cars.unshift("Suzuki")
+                            document.write("<br>")
+                            document.write(cars)
+
+             document.write("<br>")
+            cars.shift()
+            document.write("<br>")
+            document.write(cars)
+
+                         document.write("<br>")
+                            cars.push("Range Rover")
+                            document.write("<br>")
+                            document.write(cars)
+
+    </script>
+
+    <style>
+        body{
+            font-size: 30px;
+        }
+    </style>
+</body>
+</html>
