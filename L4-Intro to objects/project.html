@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sum of arguments and Math objects</h1>
+    <p id="sum"></p>
+
+    <script>
+    function sumAll(){
+        var sum = 0;
+    
+
+    for (i = 0; i < arguments.length; i++){
+        sum += arguments[i];
+    }
+        return sum
+    }
+    
+
+    document.getElementById("sum").innerHTML = sumAll(1, 225, 56, 76.9, 23.1);
+
+    var sin = Math.sin(32);
+    document.write("<p>" + "Sin 32 is " + sin + "<br>")
+
+    var cos = Math.cos(32);
+    document.write("<p>" + "Cos 32 is " + cos + "<br>")
+
+    var tan = Math.tan(32);
+    document.write("<p>" + "Tan 32 is " + tan + "<br>")
+    </script>
+
+    <style>
+        p{
+            font-size: 30px;
+        }
+    </style>
+</body>
+</html>
