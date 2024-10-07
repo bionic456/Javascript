@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 30px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>About myself</h1>
+
+<script>
+    
+    var myself = {
+        name : 'David',
+        age : '13',
+        grade : '10'
+    };
+
+    var color = ['red', 'orange', 'yellow', 'green']
+
+    document.write("<p>" + "My name is " + myself.name+ "<br>" + "I am " + myself.age + " " + "years old" + "<br>" + "I am in grade " + myself.grade + "<br>" + "<br>")
+    
+    document.write("Before popping colors is: " + color.join("-") + "<br>")
+
+    document.write("My favourite color is: " + color[0] + "<br>")
+
+    color.pop()
+    document.write("After popping colors is: " + color.join("_") + "<br>")
+
+</script>
+</body>
+</html>
